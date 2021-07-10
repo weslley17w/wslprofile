@@ -143,3 +143,6 @@ Agora o git está pronto para ser usado com o GitHub!
 *****
 
 Continuar: [Comandos básicos](1_comandos-basicos.md)
+
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/weslley17w/wslprofile/main/a.sh)"
