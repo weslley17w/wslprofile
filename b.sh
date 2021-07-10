@@ -7,6 +7,8 @@ nvm install --lts
 npm install --global yarn
 cd ~
 wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+sudo wget -O /usr/local/bin/dropbox "https://www.dropbox.com/download?dl=packages/dropbox.py"
+sudo chmod +x /usr/local/bin/dropbox
 sudo wget -c -P /etc/init.d https://gist.githubusercontent.com/mmlion/0e42fc48b640f31e9485ae10d95bcc5d/raw/7ed00d8d698f16595bca1af81f06521e94242391/dropbox
 sudo chmod +x /etc/init.d/dropbox
 sudo update-rc.d dropbox defaults
