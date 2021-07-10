@@ -80,7 +80,7 @@ Para fazer as transferências de arquivos entre máquina e servidor por
 ssh, é necessário primeiro gerar uma chave ssh local.
 
 ```bash
-$ ssh-keygen -t rsa -C "meuemail@servidor.com"
+$ ssh-keygen -t rsa -C "weslley17w@gmail.com"
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/mayer/.ssh/id_rsa):
 ```
