@@ -34,8 +34,8 @@ automaticamente em todas as suas ações posteriormente - adicionar um
 email válido é importante)
 
 ```bash
-git config --global user.name "Fernando Mayer"
-git config --global user.email "meuemail@servidor.com"
+git config --global user.name "Weslley Barros"
+git config --global user.email "weslley17w@gmail.com"
 ```
 
 Além disso podemos definir um editor de texto padrão para escrever as
