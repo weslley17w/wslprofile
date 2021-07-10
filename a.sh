@@ -3,9 +3,7 @@ sudo apt upgrade -y
 sudo apt install zsh -y
 sudo apt install build-essential -y
 cd ~
-wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-sh install.sh
-rm install.sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sed -i -e 's/robbyrussell/af-magic/g' ~/.zshrc
 git clone git@github.com:zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/zsh-autosuggestions
 sed -i -e 's/(git)/(git zsh-autosuggestions)/g' ~/.zshrc
@@ -14,7 +12,6 @@ source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 nvm install --lts
 npm install --global yarn
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-sudo wget -O /usr/local/bin/dropbox "https://www.dropbox.com/download?dl=packages/dropbox.py"
 sudo chmod +x /usr/local/bin/dropbox
 dropbox start
 dropbox autostart y
