@@ -7,10 +7,10 @@ nvm install --lts
 npm install --global yarn
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 sudo chmod +x /usr/local/bin/dropbox
-dropbox start
 dropbox autostart y
 sudo wget -c -P /etc/init.d https://gist.githubusercontent.com/mmlion/0e42fc48b640f31e9485ae10d95bcc5d/raw/7ed00d8d698f16595bca1af81f06521e94242391/dropbox
 sudo chmod +x /etc/init.d/dropbox
 sudo update-rc.d dropbox defaults
 ln -s ~/Dropbox/Development ~/Development
 source .zshrc #RECARREGAR TERMINAL FINAL
+dropbox start
