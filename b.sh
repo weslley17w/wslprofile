@@ -14,5 +14,7 @@ sudo chmod +x /etc/init.d/dropbox
 sudo update-rc.d dropbox defaults
 dropbox autostart y
 ln -s ~/Dropbox/Development ~/Development
+echo >> ~/.zshrc
+echo 'alias dev="cd ~/Development"' >> ~/.zshrc
 source .zshrc #RECARREGAR TERMINAL FINAL
 dropbox start
